@@ -2,7 +2,7 @@ from rest_framework import generics
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework import filters
 from app.models import Location, Cinema, Movie, Review, FilmManager, Ticket
 from app.serializers import UserSerializer, RegisterSerializer, LocationSerializer, CinemaSerializer, MovieSerializer, ReviewSerializer, TicketSerializer
@@ -12,6 +12,8 @@ from django.shortcuts import render
 
 @api_view(['GET', 'POST'])
 def locations_view(request):
+    permission_classes = (AllowAny,)
+
     if request.method == 'GET':
         locations = Location.objects.all()
         serializer = LocationSerializer(locations, many=True)
@@ -26,6 +28,8 @@ def locations_view(request):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def location_view(request, pk):
+    permission_classes = (AllowAny,)
+
     location = get_object_or_404(Location, pk=pk)
     if request.method == 'GET':
         serializer = LocationSerializer(location)
@@ -41,6 +45,8 @@ def location_view(request, pk):
 
 
 class Cinemas(APIView):
+    permission_classes = (AllowAny,)
+
     filter_backends = (filters.OrderingFilter,)
     ordering = ('name', )
 
@@ -60,6 +66,8 @@ class Cinemas(APIView):
 
 
 class CinemaView(APIView):
+    permission_classes = (AllowAny,)
+
     def get(self, request, pk):
         cinema = get_object_or_404(Cinema, pk=pk)
         serializer = CinemaSerializer(cinema)
