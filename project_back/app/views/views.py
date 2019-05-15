@@ -96,7 +96,7 @@ class Movies(generics.ListCreateAPIView):
         return Movie.objects.filter(cinema=self.kwargs['pk'])
 
     def perform_create(self, serializer):
-        cinema = get_object_or_404(Movie, id=self.kwargs['pk'])
+        cinema = get_object_or_404(Cinema, id=self.kwargs['pk'])
         serializer.save(cinema=cinema)
 
 
