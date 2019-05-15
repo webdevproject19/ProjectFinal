@@ -1,5 +1,5 @@
 body {
-  background-color: #222;
+  background-color: steelblue;
 }
 
 .main2
@@ -28,11 +28,11 @@ h1 {
 }
 
 #logo-link {
-  color: #BBB;
+  color: steelblue;
 }
 
 #logo-link:hover {
-  color: #FFF;
+  color: black;
 }
 
 .login {
@@ -44,7 +44,7 @@ h1 {
 .sign_up {
   margin-left: 130px;
   font-size: 11px;
-  color: #AAA;
+  color: black;
 }
 
 .sign_up:hover {
@@ -61,25 +61,24 @@ h1 {
 }
 
 .sign_button {
-  background-color: #000;
   display: inline-block;
   width: 65px;
   height: 30px;
   text-align: center;
   margin-left: 10px;
   margin-top: 5px;
-  background-color: black;
+  background-color: royalblue;
   color: white;
   border-radius: 7px;
 }
 
 .sign_button a, .logout a {
-  color: #BBB;
+  color: black;
   font-size: 14px;
 }
 
 .sign_button a:hover, .logout a:hover {
-  color: white;
+  color: black;
 }
 
 .image {
@@ -89,7 +88,7 @@ h1 {
 }
 
 .main1 {
-  background-color: #111;
+  background-color: steelblue;
   width: 100%;
   height: 35px;
   position: relative;
@@ -115,7 +114,8 @@ nav {
 }
 
 .nav-item a {
-  color: #EEE;
+  color: black;
+  font-weight: bold;
   font-size: 15px;
 }
 
@@ -124,26 +124,25 @@ nav {
 }
 
 h4 {
-  color: #BBB;
+  color: black;
   position: absolute;
   margin-right: 10px;
   margin-top: 8px;
 }
 
 h4:hover {
-  color: #EEE;
+  color:black;
 }
 
 .logout {
   position: absolute;
-  background-color: #000;
   width: 65px;
   height: 30px;
   text-align: center;
   margin-left: 150px;
   margin-top: 5px;
-  background-color: black;
-  color: white;
+  background-color: royalblue;
+  color: black;
   border-radius: 7px;
 }
 

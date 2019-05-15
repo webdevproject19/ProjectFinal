@@ -3,11 +3,11 @@ import { ILocation, ICinema } from '../shared/models/models';
 import { ProviderService } from '../shared/services/provider.service';
 
 @Component({
-  selector: 'app-nav-bar',
-  templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss']
+  selector: 'app-navigation',
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class NavigationComponent implements OnInit {
 
   public locations: ILocation[] = [];
   public location1: ICinema[] = [];

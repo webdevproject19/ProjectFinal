@@ -10,8 +10,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavigationComponent } from './navigation/navigation.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { CinemaComponent } from './cinema/cinema.component';
 import { SignupComponent } from './signup/signup.component';
@@ -23,8 +22,7 @@ import { MoviesComponent } from './movies/movies.component';
     MainComponent,
     LoginComponent,
     HeaderComponent,
-    FooterComponent,
-    NavBarComponent,
+    NavigationComponent,
     TicketsComponent,
     CinemaComponent,
     SignupComponent,

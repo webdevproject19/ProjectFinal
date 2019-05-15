@@ -9,7 +9,7 @@
   padding: 10px;
   position: absolute;
   top: 770px;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
   border: 2px solid #222;
@@ -17,7 +17,7 @@
 }
 
 .box h2 {
-  color: #222;
+  color: steelblue;
 }
 
 .box input[type="text"],.box input[type="password"] {
@@ -48,16 +48,15 @@
   margin: 20px auto;
   text-align: center;
   border: 2px solid #222;
-  background-color: #222;
+  background-color: steelblue;
   padding: 14px 40px;
   outline: none;
   color: white;
-  border-radius: 16px;
   transition: 0.25s;
   font-size: 16px;
   cursor: pointer;
 }
 
 .box input[type="submit"]:hover {
-  background: black;
+  background: steelblue;
 }

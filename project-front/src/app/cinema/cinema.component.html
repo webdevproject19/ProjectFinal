@@ -1,6 +1,6 @@
 <div class="info">
   <h1>{{cinema.name}}</h1>
-  <img src={{cinema.image_url}} alt="image" width="680px">
+  <img src={{cinema.image_url}} alt="image" width="700px">
 </div><br>
 
 <div class="more">
@@ -21,7 +21,7 @@
 <div class="reviews">
   <h2 id="head2">Reviews</h2>
   <div *ngIf="isLogged" class="in">
-    <textarea placeholder="Type your review here" name="" id="write" cols="250" rows="6" [(ngModel)]="text"></textarea>
+    <textarea placeholder="Write a review below" name="" id="write" cols="250" rows="6" [(ngModel)]="text"></textarea>
     <button id="send" (click)="sendReview()">Send</button>
   </div>
 
