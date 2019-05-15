@@ -1,0 +1,43 @@
+<body>
+
+<div class="main1">
+  <nav>
+    <ul class="nav-tabs">
+      <li class="nav-item">
+        <a href={{items[0].link}} class="nav-link active">{{items[0].title}}</a>
+      </li>
+      <li class="nav-item" *ngIf="isLogged">
+        <a href={{items[1].link}} class="nav-link active">{{items[1].title}}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="sign" *ngIf="!isLogged">
+  <div class="sign_button">
+    <a href="/login">Log in</a>
+  </div>
+  <div class="sign_button">
+    <a href="/signup">Sign up</a>
+  </div>
+
+</div>
+
+<div class="sign_out" *ngIf="isLogged">
+  <h4>Hello, {{this.userName}}!</h4>
+  <div class="logout">
+    <a href="/" (click)="logout()">Log out</a>
+  </div>
+</div>
+
+lo
+<div class="main2">
+  <div class="image">
+    <img src="../../assets/logotype.png" alt="logo" width="150px">
+  </div>
+
+  <link href="https://fonts.googleapis.com/css?family=Gugi|Teko" rel="stylesheet">
+  <h1>Guide for Almaty's cinemas</h1>
+</div>
+
+</body>

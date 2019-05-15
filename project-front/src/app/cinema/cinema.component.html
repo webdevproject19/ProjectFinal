@@ -1,0 +1,34 @@
+<div class="info">
+  <h1>{{cinema.name}}</h1>
+  <img src={{cinema.image_url}} alt="image" width="680px">
+</div><br>
+
+<div class="more">
+  <table>
+    <tr>
+      <td><h3>Contacts:</h3></td>
+      <td id="#second">{{cinema.contact}}</td>
+    </tr><br><br>
+    <tr>
+      <div class="menu">
+        <a href="/movies">Movies</a>
+      </div>
+    </tr>
+  </table>
+</div>
+
+
+<div class="reviews">
+  <h2 id="head2">Reviews</h2>
+  <div *ngIf="isLogged" class="in">
+    <textarea placeholder="Type your review here" name="" id="write" cols="250" rows="6" [(ngModel)]="text"></textarea>
+    <button id="send" (click)="sendReview()">Send</button>
+  </div>
+
+  <div class="content" *ngFor="let review of reviews">
+    <div class="review">
+      <h4>{{review.user.first_name}}</h4>
+      <p>{{review.text}}</p>
+    </div>
+  </div>
+</div>

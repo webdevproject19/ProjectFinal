@@ -1,0 +1,30 @@
+<div class="row">
+  <h1 id="menu">Movies</h1>
+  <div class="dishes" *ngFor="let movie of movies">
+    <div>
+      <div class="column" id="column1">
+        <h3>{{movie.name}}</h3>
+
+
+        <h4>Price: {{movie.price}}</h4>
+        <img src={{movie.image_url}} alt="image" width="300px" height='100%'/>
+
+
+
+      </div>
+
+      <div *ngIf="isLogged">
+        <button  id="order" (click)="postTicket(movie)">Buy Ticket</button>
+      </div>
+
+
+      <div  class="column3" id="inputs" *ngIf="isAdmin">
+        <input id="input" type="text" [(ngModel)]="movie.name">
+        <input  id="input2"type="text" [(ngModel)]="movie.price">
+        <button  id ="save" (click)="putMovie(movie)">Save</button>
+        <button id ="save" (click)="deleteMovie(movie)">Delete</button>
+      </div>
+
+    </div>
+  </div>
+</div>

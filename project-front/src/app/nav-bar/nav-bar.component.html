@@ -1,0 +1,35 @@
+<div class="main">
+  <nav>
+    <ul class="nav-tabs">
+      <li class="nav-item" *ngFor='let location of locations'>
+        <a class="nav-link active">{{location.name}}</a>
+
+        <ng-container *ngIf="location.id===1">
+          <div class="content">
+            <ng-container *ngFor="let l1 of location1">
+              <a href="/cinema" (click)="sendCinemaId(l1)">{{l1.name}}</a>
+            </ng-container>
+          </div>
+        </ng-container>
+
+        <ng-container *ngIf="location.id===2">
+          <div class="content">
+            <ng-container *ngFor="let l2 of location2">
+              <a href="/cinema" (click)="sendCinemaId(l2)">{{l2.name}}</a>
+            </ng-container>
+          </div>
+        </ng-container>
+
+        <ng-container *ngIf="location.id===3">
+          <div class="content">
+            <ng-container *ngFor="let l3 of location3">
+              <a href="/cinema" (click)="sendCinemaId(l3)">{{l3.name}}</a>
+            </ng-container>
+          </div>
+        </ng-container>
+
+      </li>
+    </ul>
+  </nav>
+
+</div>

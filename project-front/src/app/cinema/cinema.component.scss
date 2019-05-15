@@ -1,0 +1,117 @@
+.info {
+  height: 550px;
+  width: 60%;
+  margin-left: 7%;
+  position: relative;
+  float: left;
+}
+
+.more{
+  position: absolute;
+  margin-top: 1cm;
+  margin-left: 22cm;
+  float: right;
+}
+.reviews {
+  height: 550px;
+  max-height: 800px;
+  width: 680px;
+  margin-left: 7%;
+  margin-bottom: 3cm;
+  position: relative;
+  border-radius: 4%;
+  float: left;
+}
+
+h1 {
+  font-size: 49px;
+  font-family: 'Teko', serif;
+}
+
+#head2 {
+  font-family: 'Teko', serif;
+  text-align: center;
+  margin-top: 7px;
+  font-size: 32px;
+}
+
+#send a:hover{
+  color: red;
+}
+#write {
+  width: 85%;
+  height: 12%;
+  font-size: 16px;
+  margin-left: 1cm;
+}
+.review{
+  margin-left: 0.7cm;
+  margin-right: 0.3cm;
+  margin-bottom: 4px;
+}
+.menu {
+  position: absolute;
+  width: 85px;
+  height: 40px;
+  text-align: center;
+  color: black;
+  border-radius: 7px;
+}
+
+.menu a {
+  color: black;
+  font-size: 23px;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: white;
+}
+#image{
+  width: 100%;
+}
+
+table {
+  width: 350px;
+}
+tr {
+  width: 300px;
+}
+#second {
+  margin-left: 25px;
+}
+
+textarea {
+  border-radius: 4%;
+  border: 2px solid black;
+  margin-left: 10px;
+}
+
+textarea:focus {
+  border: 2px solid yellow;
+}
+
+#send {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #222;
+  background-color: #222;
+  padding: 8px 20px;
+  outline: none;
+  color: white;
+  border-radius: 16px;
+  transition: 0.25s;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#send:hover {
+  background: black;
+}
+
+.content {
+  margin-left: 20px;
+}

@@ -1,0 +1,38 @@
+h3{
+  font-family: 'Tako', serif;
+  font-size: 200%;
+  text-align: center;
+}
+.column{
+  padding-left: 150px;
+  padding-top: 10px;
+  float: left;
+  width: 30%;
+  height: 100px;
+  background-color:white;
+}
+.confirm{
+  padding-top: 15%;
+  padding-left: 38%;
+}
+.main{
+  padding: 30px;
+}
+.button{
+  width: 100px;
+  height: 32px;
+  background-color: darkred;
+  color:white;
+  border-radius: 7%;
+}
+.button2{
+  width: 100px;
+  height: 32px;
+  background-color: green;
+  color:white;
+  border-radius: 8%;
+  border-block-start-color: green;
+}
+.button2:hover{
+  background-color: rgb(3, 110, 3);
+}

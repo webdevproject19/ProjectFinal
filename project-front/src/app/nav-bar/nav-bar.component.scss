@@ -1,0 +1,65 @@
+.main {
+  background-color:black;
+  width: 100%;
+  height: 55px;
+  position: relative;
+  margin-bottom: 2cm;
+}
+
+nav {
+  width: 75%;
+  height: 100%;
+  float: left;
+}
+
+.nav-tabs {
+  list-style: none;
+  margin-left: 46.5%;
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  max-width: 100px;
+  height: 100%;
+  padding: 8px 20px 0px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-item a {
+  color: #EEE;
+  font-size: 15px;
+}
+
+.dropdown{
+  position: relative;
+  top: 95%;
+  background-size: 75%;
+  background-color: white;
+}
+
+.nav-item :hover {
+  color: #777;
+
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color:black;
+  min-width: 160px;
+  box-shadow: 0px 0px 0px 0px;
+  padding-block-start: 0.8%;
+  z-index: 1;
+}
+
+.content a {
+  color: white;
+  padding: 12px 20px;
+  display: block;
+}
+
+.nav-item:hover .content {display: block ;}
+
+.content a:hover {color:goldenrod;}

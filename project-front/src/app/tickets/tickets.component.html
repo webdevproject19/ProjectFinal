@@ -1,0 +1,21 @@
+<div class="main" *ngIf="!empty">
+
+  <div class="orders" *ngFor="let ticket of tickets">
+    <div class="column">
+      <h3>{{ticket.movie_name}}</h3>
+    </div>
+    <div class="column">
+      <button class="button"  (click)="deleteTicket(ticket)">Delete</button>
+    </div>
+  </div>
+
+  <div class="confirm">
+    <button class="button2" (click)="deleteTickets()">Confirm</button>
+  </div>
+
+</div>
+
+
+<div *ngIf="empty">
+  <h3>Your ticket list is empty!</h3>
+</div>
